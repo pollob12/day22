@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+h2{
+    text-align: center;
+    color: red;
+    font-size: 40px; 
+    font-style: italic; 
+}
+
+h2::before{
+    content: "Aga-"; 
+}
+
+h2::after{
+    content: "- Pore";  
+}
+
+p::before{
+    content: ' " '; 
+}
+
+
+p::after{
+    content: ' " '; 
+} 
+
+p{
+    text-align: center;
+    font-size: 30px;
+    font-style: italic; 
+}
+
+ .button-div1 {
+	display: inline-blocked;
+	text-align: center;
+	margin-top: 40px; 
+    
+} 
+
+
+
+.click-1st {
+	font-size: 40px;
+	text-decoration: none; 
+	background: #55efc4;
+	padding: 14px 33px;
+	display: inline-block;
+	border-radius: 15px; 
+    position: relative; 
+    z-index: 1; 
+    text-align: left; 
+}  
+
+
+.click-1st::before{
+    content: "";
+    height: 0;
+    width:100%;   
+    position: absolute; 
+    top: 0;
+    left: 0;
+    background-color:red; 
+    border-radius: 15px; 
+    transition: .3s; 
+    z-index: -1; 
+} 
+
+.click-1st:hover::before{
+  height:100%;
+} 
+
+.button-div2 {
+	display: inline-blocked;
+	text-align: center;
+	margin-top: 40px; 
+    
+} 
+
+
+
+.click-2nd{
+	font-size: 40px;
+	text-decoration: none; 
+	background: #e80af0;
+	padding: 14px 33px;
+	display: inline-block;
+	border-radius: 15px; 
+    position: relative; 
+    z-index: 1; 
+    text-align: left; 
+}  
+
+
+.click-2nd::before{
+    content: "";
+    height:100%;
+    width:0;   
+    position: absolute; 
+    top: 0;
+    left: 0;
+    background-color:rgb(114, 8, 226);  
+    border-radius: 15px; 
+    transition: .3s; 
+    z-index: -1; 
+} 
+
+.click-2nd:hover::before{
+  width: 100%;
+}  
+
+ul{ 
+    margin-left: 50px; 
+    list-style: none;
+
+}
+
+li{
+    font-size: 30px;
+
+}  
+LI::before{
+    content: " \f00c ";
+    font-family:Font Awsome-5 Free; 
+    font-weight: 600;  
+}
